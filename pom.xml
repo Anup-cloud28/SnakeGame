@@ -148,7 +148,7 @@
                     <failBuildOnCVSS>12</failBuildOnCVSS>
                     <failOnError>false</failOnError>
 
-                    <!-- 🔥 FIX: Disable OSS Index (removes rate limit errors) -->
+                    <!--  FIX: Disable OSS Index (removes rate limit errors) -->
                     <ossIndexAnalyzerEnabled>false</ossIndexAnalyzerEnabled>
 
                     <!-- Optional performance tuning -->
