@@ -23,5 +23,29 @@ pipeline{
                 '''
             }
         }
+        stage('build'){
+            steps{
+                sh '''
+                echo 'Building the code...'
+                mvn clean install
+                '''
+            }
+        }
+        stage('build'){
+            steps{
+                sh '''
+                echo 'Building the code...'
+                mvn clean install
+                '''
+            }
+        }
+        stage('docker build'){
+            steps{
+                sh '''
+                echo 'Building the docker image...'
+                docker build -t snakegame:1.0 .
+                ...
+            }
+        }
     }
 }
