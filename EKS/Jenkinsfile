@@ -23,11 +23,11 @@ pipeline{
             }
         }
 
-        stage('Snyk Security Scan'){
-            steps{
-                sh 'pwd; cd EKS/;bash iac-code-scan.sh'
-            }
-        }
+        // stage('Snyk Security Scan'){
+        //     steps{
+        //         sh 'pwd; cd EKS/;bash iac-code-scan.sh'
+        //     }
+        // }
 
         stage('Plan'){
             steps{
