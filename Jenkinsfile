@@ -23,22 +23,7 @@ pipeline{
                 '''
             }
         }
-        stage('build'){
-            steps{
-                sh '''
-                echo 'Building the code...'
-                mvn clean install
-                '''
-            }
-        }
-        stage('build'){
-            steps{
-                sh '''
-                echo 'Building the code...'
-                mvn clean install
-                '''
-            }
-        }
+        
         stage('docker build'){
             steps{
                 sh '''
